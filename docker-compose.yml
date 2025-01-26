@@ -9,6 +9,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./public:/app/public
+      - ./:/host
     environment:
       - CHOKIDAR_USEPOLLING=true
     stdin_open: true

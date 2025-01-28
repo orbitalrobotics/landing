@@ -27,7 +27,7 @@ function LandingPage() {
     <div className="pt-24">
       <section className="container mx-auto text-center">
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
-          Redefining Robotics
+            <img src="logo.png" alt="Logo" class="eye-style" />
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
           Pioneering intelligent robotic systems that transform complex challenges into elegant solutions.
@@ -44,7 +44,7 @@ function LandingPage() {
 
       <section className="container mx-auto mt-24 grid md:grid-cols-3 gap-8">
         {features.map((feature, index) => (
-          <FeatureCard 
+          <FeatureCard  
             key={index} 
             {...feature} 
             isActive={activeFeature === index}

@@ -16,26 +16,12 @@ function Header() {
     <header className="header">
       <nav className="nav">
         {/* Navigation links */}
-         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-
-          <li><Link to="/" className={`nav-links ${isOpen ? 'open' : ''}`}>
-            Orbital Robotics
-          </Link>
-          </li>
-          <li>
-          <Link to="/technologies" >
-            Technologies
-          </Link>
-          </li>
-          <li>
-          <Link to="/solutions">
-            Solutions
-            </Link></li>
-        <li>
-        <Link to="/contact" >
-            Contact
-        </Link>
-        </li>
+        <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+            <img src="logo.png" alt="Logo" class="eye-style" />
+            <li><Link to="/">Orbital Robotics</Link></li>
+            <li><Link to="/solutions">Solutions</Link></li>
+            <li><Link to="/technologies">Technologies</Link></li>
+            <li><Link to="/contact" >Contact</Link></li>
         </ul>
         {/* Button to toggle the dropdown menu visibility */}
         <button className="dropdown-toggle" onClick={toggleDropdown}>

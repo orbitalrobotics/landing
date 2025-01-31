@@ -20,7 +20,7 @@ function Header() {
             <img src="logo.png" alt="Logo" class="eye-style" />
             <li><Link to="/">Orbital Robotics</Link></li>
             <li><Link to="/solutions">Solutions</Link></li>
-            <li><Link to="/technologies">Technologies</Link></li>
+            <li><Link to="/team">Team</Link></li>
             <li><Link to="/contact" >Contact</Link></li>
         </ul>
         {/* Button to toggle the dropdown menu visibility */}

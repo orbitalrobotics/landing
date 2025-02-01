@@ -1,0 +1,51 @@
+/* Team.css */
+
+.section-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px; /* Spacing between title and description */
+}
+
+.section-description {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 80%; /* Limit width to prevent text from stretching too far */
+}
+
+.about-section h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-member {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.1em;
+  color: #333;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.team-member p {
+  font-size: 0.9em;
+  color: #777;
+}

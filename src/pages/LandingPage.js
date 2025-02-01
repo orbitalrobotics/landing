@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Rocket, Globe, Settings } from 'lucide-react';
-import FeatureCard from '../components/FeatureCard';
+import Solutions from './Solutions';
+import Team from './Team';
+import VideoBackground from './VideoBackground';
+import videoBg from './video/cube_catch.mp4'
 
 function LandingPage() {
   const [activeFeature, setActiveFeature] = useState(null);
@@ -25,6 +28,8 @@ function LandingPage() {
 
   return (
     <div className="pt-24">
+      <VideoBackground videoSrc={videoBg}>
+
       <section className="container mx-auto text-center">
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
 
@@ -41,8 +46,18 @@ function LandingPage() {
           </button>
         </div>
       </section>
+      </VideoBackground>
 
-      <section className="container mx-auto mt-24 grid md:grid-cols-3 gap-8">
+      <section id='solutions'>
+        <Solutions />
+      </section>
+
+      <section id='team'>
+        <Team />
+      </section>
+
+    {/* ai generated floaty boxy thingys */}
+        {/* <section className="container mx-auto mt-24 grid md:grid-cols-3 gap-8">
         {features.map((feature, index) => (
           <FeatureCard  
             key={index} 
@@ -52,7 +67,7 @@ function LandingPage() {
             onMouseLeave={() => setActiveFeature(null)}
           />
         ))}
-      </section>
+      </section> */}
     </div>
   );
 }

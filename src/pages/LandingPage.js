@@ -4,7 +4,6 @@ import Solutions from './Solutions';
 import Team from './Team';
 import About from './About'
 import Splash from "./images/main_logo.svg"
-import VideoBackground from './VideoBackground';
 import videoBg from "./video/cube_catch.mp4"
 import "./LandingPage.css"
 
@@ -19,7 +18,7 @@ function LandingPage() {
     },
     {
       icon: <Globe className="w-12 h-12 text-green-500" />,
-      title: "Global Deployment",
+      title: "Global Deployment", 
       description: "Scalable technologies deployable across diverse environments."
     },
     {
@@ -31,53 +30,32 @@ function LandingPage() {
 
   return (
       
-      <VideoBackground className="content" videoSrc={videoBg}>
+
     <div className="pt-24">
-            <img src={Splash} alt="Logo"/>
-      <section className="container mx-auto text-center">
-        <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
 
-        </h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-        </p>
-
-        <div className="flex justify-center space-x-6">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">
-            Explore Solutions
-          </button>
-          <button className="border border-gray-300 px-8 py-3 rounded-full hover:bg-gray-100 transition">
-            Contact Us
-          </button>
+        <div className='video-main'>
+            <div className="overlay"></div>
+            <video src={videoBg} autoPlay loop muted />
+            
+            <div className='content'>
+                <img src={Splash} alt="Logo"/>
+            </div>
         </div>
-      </section>
 
-      <section id='solutions'>
-        <Solutions />
-      </section>
+        <div>
+            <section id='solutions'>
+                <Solutions />
+            </section>
 
-      <section id='about'>
-        <About />
-      </section>
+            <section id='about'>
+                <About />
+            </section>
 
-      <section id='team'>
-        <Team />
-      </section>
-
-    {/* ai generated floaty boxy thingys */}
-        {/* <section className="container mx-auto mt-24 grid md:grid-cols-3 gap-8">
-        {features.map((feature, index) => (
-          <FeatureCard  
-            key={index} 
-            {...feature} 
-            isActive={activeFeature === index}
-            onMouseEnter={() => setActiveFeature(index)}
-            onMouseLeave={() => setActiveFeature(null)}
-          />
-        ))}
-      </section> */}
-
+            <section id='team'>
+                <Team />
+            </section> 
+        </div>
     </div>
-    </VideoBackground>
 
   );
 }

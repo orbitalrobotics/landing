@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import VideoBackground from './pages/VideoBackground';
+import About from './pages/About';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/solutions" element={<Solutions />} />
+        <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} /> 
       </Routes>

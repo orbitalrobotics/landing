@@ -20,6 +20,7 @@ function Header() {
             <img src="logo.png" alt="Logo" class="eye-style" />
             <li><Link to="/">Orbital Robotics</Link></li>
             <li><Link to="/solutions">Solutions</Link></li>
+            <li><Link to="/About">About</Link></li>
             <li><Link to="/team">Team</Link></li>
             <li><Link to="/contact" >Contact</Link></li>
         </ul>

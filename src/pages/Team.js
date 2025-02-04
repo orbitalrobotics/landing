@@ -1,8 +1,8 @@
 import React from 'react';
-import Riley from './images/headshots/riley.jpg';
-import Adeel from './images/headshots/adeel.jpg';
-import Sohil from './images/headshots/sohil.jpeg';
-import Aaron from './images/headshots/aaron.png';
+import Riley from '../assets/images/headshots/riley.jpg';
+import Adeel from '../assets/images/headshots/adeel.jpg';
+import Sohil from '../assets/images/headshots/sohil.jpeg';
+import Aaron from '../assets/images/headshots/aaron.png';
 import './Team.css'; // CSS file for styling
 
 function Team() {

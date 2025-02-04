@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars } from "react-icons/fa6"; // Importing the FaBars icon for the dropdown button
 import './Header.css'; // Assuming you have CSS for the header styling
+import Logo from "../assets/images/logo_white.png"
 
 function Header() {
   // State for controlling the visibility of the dropdown menu
@@ -17,8 +18,7 @@ function Header() {
       <nav className="nav">
         {/* Navigation links */}
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-            <img src="logo.png" alt="Logo" class="eye-style" />
-            <li><Link to="/">Orbital Robotics</Link></li>
+            <div><Link to="/"><img src={Logo} alt="Logo" class="eye-style" /></Link></div>
             <li><Link to="/solutions">Solutions</Link></li>
             <li><Link to="/About">About</Link></li>
             <li><Link to="/team">Team</Link></li>

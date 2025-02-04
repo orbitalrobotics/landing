@@ -3,8 +3,8 @@ import { Rocket, Globe, Settings } from 'lucide-react';
 import Solutions from './Solutions';
 import Team from './Team';
 import About from './About'
-import Splash from "./images/main_logo.svg"
-import videoBg from "./video/cube_catch.mp4"
+import Splash from "../assets/images/logo_white.png"
+import videoBg from "../assets/video/cube_catch.mp4"
 import "./LandingPage.css"
 
 function LandingPage() {
@@ -31,17 +31,37 @@ function LandingPage() {
   return (
       
 
-    <div className="pt-24">
+    <div className="master-page-container">
+
 
         <div className='video-main'>
             <div className="overlay"></div>
             <video src={videoBg} autoPlay loop muted />
             
             <div className='content'>
-                <img src={Splash} alt="Logo"/>
+                <div id="home">
+                    <div className="home-content">
+                        <div><img className='main-logo' src={Splash} alt="Logo"/></div>
+                        <h1>Servicing, assembling, and manufacturing spacecraft in orbit with AI powered robots</h1>
+                        <p>
+                        Welcome to <g><b><i>Orbital Robitics</i></b></g>, where innovation meets foresight. 
+                        </p>
+
+                        <div className='button-wrapper'>
+                            <a href="/Solutions">
+                                <button className="read-more-button">Explore Solutions</button>
+                            </a>
+                        </div>
+
+
+                        {/* <div className="logo-container">
+                            <img src={Splash} alt="Logo" class="styled-logo"/>
+                        </div> */}
+                    </div>
+
+                </div>
             </div>
         </div>
-
         <div>
             <section id='solutions'>
                 <Solutions />

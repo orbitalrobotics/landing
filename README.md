@@ -52,3 +52,17 @@ npm start
 ```bash
 npm run build
 ```
+
+## WSL configuration
+
+### Network
+
+#### Windows Machine (Docker running from WSL-Ubuntu instance)
+
+1) Forward wsl port(s) to your host windows machine:
+
+`netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddress=172.XX.XXX.XX`
+
+2) Use `Windows Defender Firewall with Advanced Security` and create an Inbound Rule to permit the ports clients can connect to.
+
+3) Go to your routers gateway IP and forward the dev or prod port(s) to make it accessible to the outside world.

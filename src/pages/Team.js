@@ -10,7 +10,7 @@ function Team() {
     <div className="team-container">
       <div className='team-background'>
         <div className="team-content">
-          <h1>Meet the <g><b><i>Orbital Robitics</i></b></g> Team</h1>
+          <h1>Meet the <g><b><i>Orbital Robotics</i></b></g> Team</h1>
           <p>Bringing you top engineering talent from the Space Industry</p>
           <section className="team-section">
             <div className="team-member">

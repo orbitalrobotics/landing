@@ -44,7 +44,7 @@ function LandingPage() {
               <div><img className='main-logo' src={Splash} alt="Logo" /></div>
               <h1>Servicing, assembling, and manufacturing spacecraft in orbit with AI powered robots</h1>
               <p>
-                Welcome to <g><b><i>Orbital Robitics</i></b></g>, where innovation meets foresight.
+                Welcome to <g><b><i>Orbital Robotics</i></b></g>, where innovation meets foresight.
               </p>
 
               <div className='button-wrapper'>

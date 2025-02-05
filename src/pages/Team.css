@@ -38,6 +38,9 @@
   padding-right: 1vw;
 }
 
+.team-section {
+  margin-top: 10vh;
+}
 
 .team-member {
   display: inline-block;

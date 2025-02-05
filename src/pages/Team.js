@@ -11,9 +11,8 @@ function Team() {
       <div className='team-background'>
         <div className="team-content">
           <h1>Meet the team</h1>
-          <p></p>
+          <p>Bringing you top engineering talent from the Space Industry</p>
           <section className="team-section">
-
             <div className="team-member">
               <img src={Aaron} alt="Team Member" />
               <h3>Aaron Borger</h3>

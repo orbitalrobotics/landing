@@ -1,10 +1,9 @@
-
 /* Container for the page */
 .master-page-container {
     background: white;
-  }
-  
-  
+}
+
+
 .home-container {
     /* background-color: #141a29;
     color: white;
@@ -41,8 +40,10 @@
     width: 120%;
     height: 50%;
     /* background-image: url('./images/background-bars-2.png'); Replace with your image path */
-    background-size: cover; /* Keeps the image aspect ratio */
-    background-position: center center; /* Centers the image */
+    background-size: cover;
+    /* Keeps the image aspect ratio */
+    background-position: center center;
+    /* Centers the image */
     /* z-index: -1; */
     object-fit: cover;
 }
@@ -51,11 +52,13 @@
 .home-content {
     position: relative;
     max-width: 900px;
-    margin: 2rem auto; /* Centers the text and adds vertical spacing */
+    margin: 2rem auto;
+    /* Centers the text and adds vertical spacing */
     /* font-size: 1.2rem; Slightly larger for emphasis */
     /* line-height: 1.6; Adds space between lines for readability */
     /* text-align: center; Keeps text centrally aligned under the header */
-    color: #e0e0e0; /* Softer white for contrast on dark backgrounds */
+    color: #e0e0e0;
+    /* Softer white for contrast on dark backgrounds */
     padding: 1rem;
     /* font-family: 'Tomorrow', sans-serif; */
     align-items: center;
@@ -65,7 +68,8 @@
     font-size: 2rem;
     text-align: center;
     margin-top: 12.5vh;
-    color: #cccccc; /* Slightly lighter for subheaders */
+    color: #cccccc;
+    /* Slightly lighter for subheaders */
     font-weight: 200;
     /* margin-bottom: 5vh; */
     padding-left: 1vw;
@@ -102,7 +106,8 @@
 .button-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 6vh; /* Same top margin as the button */
+    margin-top: 6vh;
+    /* Same top margin as the button */
 }
 
 .read-more-button {
@@ -124,8 +129,7 @@
 }
 
 
-.main-logo
-{
+.main-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -152,9 +156,12 @@
 
 
 .divider {
-    height: 15px; /* Thickness of the line */
-    background-color: white; /* White color for the line */
-    width: 100%; /* Full width */
+    height: 15px;
+    /* Thickness of the line */
+    background-color: white;
+    /* White color for the line */
+    width: 100%;
+    /* Full width */
 }
 
 
@@ -174,8 +181,8 @@
 .howto {
     max-width: 1000px;
     margin: 2rem auto;
-    color: #e0e0e0; 
-    padding: 1rem; 
+    color: #e0e0e0;
+    padding: 1rem;
     align-items: center;
 }
 
@@ -212,7 +219,8 @@
     align-self: flex-start;
     text-align: center;
     padding: 10px;
-    width: 25%; /* Adjust width as needed */
+    width: 25%;
+    /* Adjust width as needed */
 }
 
 .feature-column p {
@@ -230,7 +238,8 @@
 
 /* Image/graphic styling */
 .feature-graphic {
-    max-width: 100px; /* Adjust size as needed */
+    max-width: 100px;
+    /* Adjust size as needed */
     max-height: 75px;
     margin-bottom: 1rem;
 }
@@ -258,12 +267,12 @@
 /* Responsive styling for mobile */
 @media (max-width: 768px) {
     .features-section {
-    flex-direction: column;
+        flex-direction: column;
     }
 
     .feature-column {
-    width: 100%;
-    margin-bottom: 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
     }
 }
 
@@ -271,15 +280,15 @@
 .video-main {
     width: 100%;
     height: 100vh;
-  }
-  
-  video {
+}
+
+video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .content {
+}
+
+.content {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -288,10 +297,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;   
-  }
-  
-  .overlay {
+    color: white;
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -299,4 +308,4 @@
     height: 100%;
     /* background-color: rgba(0,0,0,.4); */
     /* background-color: #000000cc; */
-  }
+}

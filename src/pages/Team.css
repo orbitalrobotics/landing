@@ -1,12 +1,16 @@
 /* Team.css */
 
 .team-container {
-  /* max-width: 1200px; */
-  margin: auto;
-  /* padding: 0 40px; */
-  font-family: Arial, sans-serif;
-  color: #ffffff;
-
+  color: white;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  position: relative;
+  /* overflow-y: auto; */
+  display: flex;
+  overflow-x: hidden;
 }
 
 .team-background {
@@ -33,9 +37,28 @@
   color: #cccccc;
   /* Slightly lighter for subheaders */
   font-weight: 200;
-  /* margin-bottom: 5vh; */
+  margin-bottom: 8vh;
   padding-left: 1vw;
   padding-right: 1vw;
+}
+
+.team-content g {
+  color: #6EF0CD;
+}
+
+.highlight {
+  color: #6EF0CD;
+}
+
+.team-content p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-weight: 300;
+  /* max-width: 700px; */
 }
 
 .team-section {

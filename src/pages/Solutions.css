@@ -1,122 +1,113 @@
 /* Solutions.css */
-.about-section {
-    max-width: 1200px;
-    margin: auto;
-    /* padding: 0 40px; */
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
- 
+.solutions-container {
+  /* max-width: 1200px; */
+  /* margin: auto; */
+  /* padding-top: 40px; */
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
 
-/* Container styling */
-.vision-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 40px;
-    max-width: 1000px;
-    margin: auto;
-  }
+.solutions-background {
+  background-color: #000000;
+  width: 100%;
+  /* margin: auto; */
+  /* padding: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-  .vision-card h3 {
-    color: #777;
-  }
-  
-  /* Top intro card styling */
-  .vision-intro-card {
-    grid-column: span 2; /* Span both columns */
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    padding: 30px;
-    text-align: center; /* Center content */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .section-title {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 15px; /* Spacing between title and description */
-  }
-  
-  .section-description {
-    font-size: 1.1em;
-    color: #555;
-    max-width: 80%; /* Limit width to prevent text from stretching too far */
-  }
-  
-  /* Card styling */
-  .vision-card {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
-  }
-  
-  .vision-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Heading and description styling */
-  .card-heading {
-    font-size: 1.5em;
-    color: #333;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
-  
-  .card-description {
-    /* padding: 10px auto; */
-    font-size: 1rem;
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    color: #777;
-  }
-  
-  
-  
-  /* FAQ Section */
-  .faq-section {
-    margin-bottom: 40px;
-  }
-  
-  .faq {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 10px 0;
-  }
-  
-  .faq h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #555;
-    font-weight: 500;
-  }
-  
-  .faq p {
-    font-size: 1em;
-    color: #777;
-    margin-top: 8px;
-  }
+.solutions-content {
+  margin-bottom: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .about-section h2 {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
+.solutions-content h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 12.5vh;
+  color: #cccccc; /* Slightly lighter for subheaders */
+  font-weight: 200;
+  /* margin-bottom: 5vh; */
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
 
+.solutions-content p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-weight: 300;
+  /* max-width: 700px; */
+}
 
+.content-block {
+  background-color: #1b2232;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  max-width: 1160px;
+  text-align: left;
+}
+
+.content-block h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #efefef;
+  font-weight: bold;
+}
+
+.content-block p {
+  font-size: 1em;
+  color: #cccccc;
+  margin-top: 8px;
+}
+
+.divider {
+  height: 15px;
+  background-color: white;
+  width: 100%;
+}
+
+.cta-background {
+  /* background-color: linear-gradient(#f1cd86 10%, 70%, #e8f3fa);; */
+  background-color: #f3f3f3;
+  width: 100%;
+  /* padding-top: 10px; */
+  padding-bottom: 20px;
+}
+
+.cta {
+  padding-top: 2rem;
+  max-width: 800px;
+  margin: auto;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.cta h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.centered-section h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
   
-.video-main2 {
+.video-main {
     width: 100%;
     height: 100vh;
   }
@@ -127,7 +118,7 @@
     object-fit: cover;
   }
 
-  .content2 h1 {
+  .content h1 {
     font-size: 2em;
     color: #333;
     text-align: center;
@@ -135,7 +126,7 @@
     font-weight: 600;  
   }
 
-  .content2 {
+  .content {
     position: relative;
     width: 100%;
     height: 100%;
@@ -155,3 +146,29 @@
     /* background-color: rgba(0,0,0,.4); */
     /* background-color: #000000cc; */
   }
+
+.solution-content {
+    position: relative;
+    max-width: 900px;
+    margin: 2rem auto; /* Centers the text and adds vertical spacing */
+    /* font-size: 1.2rem; Slightly larger for emphasis */
+    /* line-height: 1.6; Adds space between lines for readability */
+    /* text-align: center; Keeps text centrally aligned under the header */
+    color: #e0e0e0; /* Softer white for contrast on dark backgrounds */
+    padding: 1rem;
+    /* font-family: 'Tomorrow', sans-serif; */
+    align-items: center;
+    background-color: #141a29; /* Adjust color as needed */
+    
+}
+
+.solution-content h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 12.5vh;
+    color: #cccccc; /* Slightly lighter for subheaders */
+    font-weight: 200;
+    /* margin-bottom: 5vh; */
+    padding-left: 1vw;
+    padding-right: 1vw;
+}

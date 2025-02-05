@@ -18,7 +18,7 @@ function LandingPage() {
     },
     {
       icon: <Globe className="w-12 h-12 text-green-500" />,
-      title: "Global Deployment", 
+      title: "Global Deployment",
       description: "Scalable technologies deployable across diverse environments."
     },
     {
@@ -29,52 +29,56 @@ function LandingPage() {
   ];
 
   return (
-      
+
 
     <div className="master-page-container">
 
 
-        <div className='video-main'>
-            <div className="overlay"></div>
-            <video src={videoBg} autoPlay loop muted />
-            
-            <div className='content'>
-                <div id="home">
-                    <div className="home-content">
-                        <div><img className='main-logo' src={Splash} alt="Logo"/></div>
-                        <h1>Servicing, assembling, and manufacturing spacecraft in orbit with AI powered robots</h1>
-                        <p>
-                        Welcome to <g><b><i>Orbital Robitics</i></b></g>, where innovation meets foresight. 
-                        </p>
+      <div className='video-main'>
+        <div className="overlay"></div>
+        <video src={videoBg} autoPlay loop muted />
 
-                        <div className='button-wrapper'>
-                            <a href="/Solutions">
-                                <button className="read-more-button">Explore Solutions</button>
-                            </a>
-                        </div>
+        <div className='content'>
+          <div id="home">
+            <div className="home-content">
+              <div><img className='main-logo' src={Splash} alt="Logo" /></div>
+              <h1>Servicing, assembling, and manufacturing spacecraft in orbit with AI powered robots</h1>
+              <p>
+                Welcome to <g><b><i>Orbital Robitics</i></b></g>, where innovation meets foresight.
+              </p>
+
+              <div className='button-wrapper'>
+                <a href="/Solutions">
+                  <button className="read-more-button">Explore Solutions</button>
+                </a>
+              </div>
 
 
-                        {/* <div className="logo-container">
+              {/* <div className="logo-container">
                             <img src={Splash} alt="Logo" class="styled-logo"/>
                         </div> */}
-                    </div>
-
-                </div>
             </div>
-        </div>
-        <div>
-            <section id='solutions'>
-                <Solutions />
-            </section>
 
-            <section id='about'>
-                <About />
-            </section>
-
-            <section id='team'>
-                <Team />
-            </section> 
+          </div>
         </div>
+      </div>
+      <div className="divider"></div>
+
+      <div>
+        <section id='solutions' >
+          <Solutions />
+        </section>
+        <div className="divider"></div>
+
+        <section id='about'>
+          <About />
+        </section>
+        <div className="divider"></div>
+
+        <section id='team'>
+          <Team />
+        </section>
+      </div>
     </div>
 
   );

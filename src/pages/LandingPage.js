@@ -35,16 +35,16 @@ function LandingPage() {
 
 
       <div className='video-main'>
-        <div className="overlay"></div>
+        <div className="overlay">
         <video src={videoBg} autoPlay loop muted />
-
+        </div>
         <div className='content'>
           <div id="home">
             <div className="home-content">
               <div><img className='main-logo' src={Splash} alt="Logo" /></div>
               <h1>Servicing, assembling, and manufacturing spacecraft in orbit with AI powered robots</h1>
               <p>
-                Welcome to <g><b><i>Orbital Robotics</i></b></g>, where innovation meets foresight.
+                Welcome to <g><b><i>Orbital Robitics</i></b></g>, where innovation meets foresight.
               </p>
 
               <div className='button-wrapper'>
@@ -68,12 +68,10 @@ function LandingPage() {
         <section id='solutions' >
           <Solutions />
         </section>
-        <div className="divider"></div>
 
-        <section id='about'>
+        <div id='about'>
           <About />
-        </section>
-        <div className="divider"></div>
+        </div>
 
         <section id='team'>
           <Team />

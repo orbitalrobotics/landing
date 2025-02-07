@@ -5,14 +5,15 @@ import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
 import videoBg from "../assets/video/ai_catch_montage.mp4"
-
+import pose_est from "../assets/video/pose_estimation_fast.mp4"
 
 function Item(props)
 {
     return (
         <div className='video-main'>
-        <video src={videoBg} autoPlay loop muted />
-         </div>
+            <p >{props.item.name}</p>
+            <video src={props.item.video} autoPlay loop muted />
+        </div>
     )
 }
 
@@ -20,11 +21,13 @@ function Solutions(props) {
 
     var items = [
         {
-            name: "Random Name #1",
+            video: pose_est,
+            name: "Precise Pose Estimation",
             description: "Probably the most random thing you have ever seen!"
         },
         {
-            name: "Random Name #2",
+            video: videoBg,
+            name: "Physics",
             description: "Hello World!"
         }
     ]

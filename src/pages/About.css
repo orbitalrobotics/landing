@@ -135,54 +135,6 @@
   font-weight: 600;
 }
 
-/* Team Section */
-.team-section {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.team-member {
-  display: inline-block;
-  width: 200px;
-  margin: 20px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.team-member h3 {
-  font-size: 1.1em;
-  color: #333;
-  margin: 5px 0;
-  font-weight: 500;
-}
-
-.team-member p {
-  font-size: 0.9em;
-  color: #777;
-}
-
-/* Vision Section */
-/* .vision-section {
-    background-color: #f3f3f3;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .vision-section p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6em;
-    max-width: 800px;
-    margin: auto;
-  } */
-
 
 .about-content {
   position: relative;

@@ -1,9 +1,34 @@
 import React from 'react';
 import './Solutions.css'; // CSS file for styling
+
+import Carousel from 'react-material-ui-carousel'
+import { Paper, Button } from '@mui/material'
+
 import videoBg from "../assets/video/ai_catch_montage.mp4"
 
 
-function Solutions() {
+function Item(props)
+{
+    return (
+        <div className='video-main'>
+        <video src={videoBg} autoPlay loop muted />
+         </div>
+    )
+}
+
+function Solutions(props) {
+
+    var items = [
+        {
+            name: "Random Name #1",
+            description: "Probably the most random thing you have ever seen!"
+        },
+        {
+            name: "Random Name #2",
+            description: "Hello World!"
+        }
+    ]
+
     return (
 
         <div className="solutions-container">
@@ -14,15 +39,11 @@ function Solutions() {
                         Cutting-edge robotic technologies tailored to solve complex challenges across industries.
                     </p>
 
-                    {/* <div className='video-main'>
-                    <div className="overlay"></div>
-                    <video src={videoBg} autoPlay loop muted />
-                </div> */}
-
-                    <p>
-                        Coming soon! Demo footage here!
-                    </p>
-
+                    <Carousel>
+                    {
+                        items.map( (item, i) => <Item key={i} item={item} /> )
+                    }
+                    </Carousel>
                 </div>
             </div>
         </div>

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Rocket, Globe, Settings } from 'lucide-react';
 import Solutions from './Solutions';
 import Team from './Team';
-import About from './About'
+import About from './About';
+import Contact from './Contact';
 import Splash from "../assets/images/logo_white.png"
 import videoBg from "../assets/video/cube_catch.mp4"
 import "./LandingPage.css"
@@ -36,7 +37,7 @@ function LandingPage() {
 
       <div className='video-main'>
         <div className="overlay">
-        <video src={videoBg} autoPlay loop muted />
+          <video src={videoBg} autoPlay loop muted />
         </div>
         <div className='content'>
           <div id="home">
@@ -68,14 +69,23 @@ function LandingPage() {
         <section id='solutions' >
           <Solutions />
         </section>
+        <div className="divider"></div>
 
         <div id='about'>
           <About />
         </div>
+        <div className="divider"></div>
 
         <section id='team'>
           <Team />
         </section>
+
+        <div className="divider"></div>
+
+        <section id='team'>
+          <Contact />
+        </section>
+
       </div>
     </div>
 

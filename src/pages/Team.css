@@ -1,7 +1,7 @@
 /* Team.css */
 
 .team-container {
-  color: white;
+  color: rgb(0, 0, 0);
   width: 100%;
   flex-direction: column;
   justify-content: space-between;

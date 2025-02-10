@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
+
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
@@ -7,11 +9,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <h2>Orbital Robotics</h2>
         </div>
         <div className="footer-links">
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <Link to="/About">About</Link>
+          <Link to="/contact">Contact</Link>
           <a href="#privacy">Privacy Policy</a>
         </div>
         <div className="footer-social">
@@ -30,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        
+
         <p>&copy; {new Date().getFullYear()}© Orbital Robotics. All Rights Reserved</p>
       </div>
     </footer>

@@ -5,7 +5,8 @@ import Team from './Team';
 import About from './About';
 import Contact from './Contact';
 import Splash from "../assets/images/logo_white.png"
-import videoBg from "../assets/video/cube_catch.mp4"
+import videoBg from "../assets/video/single_arm_cube_catch.mp4"
+import cube_grasp from "../assets/video/free-float-cube-grasp.mp4"
 import "./LandingPage.css"
 
 function LandingPage() {
@@ -37,16 +38,16 @@ function LandingPage() {
 
       <div className='video-main'>
         <div className="overlay">
-          <video src={videoBg} autoPlay loop muted />
+          <video src={cube_grasp} autoPlay loop muted />
         </div>
         <div className='content'>
           <div id="home">
             <div className="home-content">
               <div><img className='main-logo' src={Splash} alt="Logo" /></div>
               <h1>Servicing, assembling, and manufacturing spacecraft in orbit with AI powered robots</h1>
-              <p>
+              {/* <p>
                 Welcome to <g><b><i>Orbital Robitics</i></b></g>, where innovation meets foresight.
-              </p>
+              </p> */}
 
               <div className='button-wrapper'>
                 <a href="/Solutions">

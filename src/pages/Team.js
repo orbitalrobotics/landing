@@ -16,12 +16,12 @@ function Team() {
             <div className="team-member">
               <img src={Aaron} alt="Team Member" />
               <h3>Aaron Borger</h3>
-              <p>Founding Engineer & CEO</p>
+              <p>Co-founder & CEO</p>
             </div>
             <div className="team-member">
               <img src={Sohil} alt="Team Member" />
               <h3>Sohil Pokharna</h3>
-              <p>Founding Engineer</p>
+              <p>Co-founder and Engineer</p>
             </div>
             <div className="team-member">
               <img src={Riley} alt="Team Member" />

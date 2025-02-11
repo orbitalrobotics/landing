@@ -67,7 +67,7 @@
 .home-content h1 {
     font-size: 2rem;
     text-align: center;
-    margin-top: 12.5vh;
+    margin-top: 30vh;
     color: #cccccc;
     /* Slightly lighter for subheaders */
     font-weight: 200;
@@ -278,6 +278,7 @@
 
 
 .video-main {
+    background-color: black;
     width: 100%;
     height: 100vh;
 }
@@ -302,10 +303,11 @@ video {
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -10vh;
+    left: 0px;
     width: 100%;
     height: 100%;
+    scale: 40%;
     /* background-color: rgba(0,0,0,.4); */
     /* background-color: #000000cc; */
 }

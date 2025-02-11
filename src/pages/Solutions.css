@@ -21,12 +21,27 @@
   padding-bottom: 20px;
 }
 
-.solutions-content {
+.solution-content {
   margin-bottom: 20px;
   padding: 40px;
   /* display: flex; */
   flex-direction: column;
   align-items: center;
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+  /* Centers the text and adds vertical spacing */
+  /* font-size: 1.2rem; Slightly larger for emphasis */
+  /* line-height: 1.6; Adds space between lines for readability */
+  /* text-align: center; Keeps text centrally aligned under the header */
+  color: #e0e0e0;
+  /* Softer white for contrast on dark backgrounds */
+  padding: 1rem;
+  /* font-family: 'Tomorrow', sans-serif; */
+  align-items: center;
+  background-color: #141a29;
+  /* Adjust color as needed */
+
 }
 
 .solutions-content h1 {
@@ -52,97 +67,6 @@
   /* max-width: 700px; */
 }
 
-.content-block {
-  background-color: #1b2232;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px 0;
-  max-width: 1160px;
-  text-align: left;
-}
-
-.content-block h2 {
-  margin: 0;
-  font-size: 1.2em;
-  color: #efefef;
-  font-weight: bold;
-}
-
-.content-block p {
-  font-size: 1em;
-  color: #cccccc;
-  margin-top: 8px;
-}
-
-.divider {
-  height: 15px;
-  background-color: white;
-  width: 100%;
-}
-
-.cta-background {
-  /* background-color: linear-gradient(#f1cd86 10%, 70%, #e8f3fa);; */
-  background-color: #f3f3f3;
-  width: 100%;
-  /* padding-top: 10px; */
-  padding-bottom: 20px;
-}
-
-.cta {
-  padding-top: 2rem;
-  max-width: 800px;
-  margin: auto;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.cta h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.centered-section h3 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-  margin-top: 2rem;
-}
-
-.video-main {
-  width: 100%;
-  height: 100vh;
-}
-
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  scale: 90%
-}
-
-.content h1 {
-  font-size: 2em;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(196, 6, 6);
-}
 
 .overlay {
   position: absolute;
@@ -154,23 +78,7 @@ video {
   /* background-color: #000000cc; */
 }
 
-.solution-content {
-  position: relative;
-  max-width: 900px;
-  margin: 2rem auto;
-  /* Centers the text and adds vertical spacing */
-  /* font-size: 1.2rem; Slightly larger for emphasis */
-  /* line-height: 1.6; Adds space between lines for readability */
-  /* text-align: center; Keeps text centrally aligned under the header */
-  color: #e0e0e0;
-  /* Softer white for contrast on dark backgrounds */
-  padding: 1rem;
-  /* font-family: 'Tomorrow', sans-serif; */
-  align-items: center;
-  background-color: #141a29;
-  /* Adjust color as needed */
 
-}
 
 .solution-content h1 {
   font-size: 2rem;
@@ -185,7 +93,23 @@ video {
 }
 
 
-.video-main {
+.video-container {
+  background-color: black;
   width: 100%;
-  height: 100vh;
+}
+
+.video-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.video-container p{
+  padding-top:7rem;
+  color: #6EF0CD;
+}
+
+.video-container video{
+  width: 100%;
+  height: auto; /* spec says no percent allowed here */
+  object-fit:contain
 }

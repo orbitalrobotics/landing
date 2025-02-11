@@ -16,9 +16,9 @@ import single_arm_planning from "../assets/video/single_arm_planning.mp4"
 function Item(props)
 {
     return (
-        <div className='video-main'>
-            <p >{props.item.name}</p>
-            <video src={props.item.video} autoPlay loop muted />
+        <div className='video-container'>
+            <p>{props.item.name}</p>
+            <div className='video-wrapper'><video src={props.item.video} autoPlay loop muted /></div>
         </div>
     )
 }
@@ -26,11 +26,11 @@ function Item(props)
 function Solutions(props) {
 
     var items = [
-        {
-            video: catch_montage,
-            name: "Deep Reinforcement Learning",
-            description: "Hello World!"
-        },
+        // {
+        //     video: catch_montage,
+        //     name: "Deep Reinforcement Learning",
+        //     description: "Hello World!"
+        // },
         {
             video: ar3_ai_view_catch,
             name: "AI Powered Catching with Computer Vision",
@@ -78,11 +78,10 @@ function Solutions(props) {
                         Cutting-edge robotic technologies tailored to solve complex challenges across industries.
                     </p>
 
-                    <Carousel autoPlay={false}>
                     {
                         items.map( (item, i) => <Item key={i} item={item} /> )
                     }
-                    </Carousel>
+
                 </div>
             </div>
         </div>

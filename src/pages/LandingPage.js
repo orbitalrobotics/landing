@@ -38,7 +38,7 @@ function LandingPage() {
 
       <div className='video-main'>
         <div className="overlay">
-          <video src={cube_grasp} autoPlay loop muted />
+          <video className='video-main-video' src={cube_grasp} autoPlay loop muted />
         </div>
         <div className='content'>
           <div id="home">

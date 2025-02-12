@@ -59,7 +59,7 @@
     /* text-align: center; Keeps text centrally aligned under the header */
     color: #e0e0e0;
     /* Softer white for contrast on dark backgrounds */
-    padding: 1rem;
+    /* padding: 1rem; */
     /* font-family: 'Tomorrow', sans-serif; */
     align-items: center;
 }
@@ -137,23 +137,6 @@
     top: 110px;
 }
 
-.logo-container {
-    height: 50px;
-    width: auto;
-    justify-content: center;
-    position: relative;
-    display: flex;
-    margin-top: 10vh;
-    padding-top: 5vw;
-    /* place-items: center; */
-}
-
-.styled-logo {
-    height: 100%;
-    display: block;
-    /* align-items: center; */
-}
-
 
 .divider {
     height: 15px;
@@ -163,95 +146,6 @@
     width: 100%;
     /* Full width */
 }
-
-
-.howto-container {
-    background: linear-gradient(to bottom, #f9f6f0 10%, 70%, #e8f3fa);
-    color: white;
-    width: 100vw;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-    position: relative;
-    /* overflow-y: auto; */
-    overflow-x: hidden;
-}
-
-.howto {
-    max-width: 1000px;
-    margin: 2rem auto;
-    color: #e0e0e0;
-    padding: 1rem;
-    align-items: center;
-}
-
-.howto h1 {
-    color: #333;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-
-    /* max-width: 700px; */
-}
-
-.howto p {
-    color: black;
-    /* text-align: left; */
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.features-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 3rem 0rem;
-    /* background-color: #1b1c47; Adjust as needed */
-    color: white;
-}
-
-/* Each feature column */
-.feature-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: flex-start;
-    text-align: center;
-    padding: 10px;
-    width: 25%;
-    /* Adjust width as needed */
-}
-
-.feature-column p {
-    color: #555;
-    margin-top: 1vh;
-    font-weight: 400;
-}
-
-.feature-column p2 {
-    color: #777;
-    /* margin-top: 1vh; */
-    font-weight: 400;
-    padding: 10px;
-}
-
-/* Image/graphic styling */
-.feature-graphic {
-    max-width: 100px;
-    /* Adjust size as needed */
-    max-height: 75px;
-    margin-bottom: 1rem;
-}
-
-.products {
-    color: white;
-}
-
-.about {
-    color: white;
-}
-
 
 /* Responsive styling for mobile */
 @media (max-width: 768px) {

@@ -41,7 +41,6 @@ function LandingPage() {
           <video className='video-main-video' src={cube_grasp} autoPlay loop muted />
         </div>
         <div className='content'>
-          <div id="home">
             <div className="home-content">
               <div><img className='main-logo' src={Splash} alt="Logo" /></div>
               <h1>Servicing, assembling, and manufacturing spacecraft in orbit with AI powered robots</h1>
@@ -59,8 +58,6 @@ function LandingPage() {
               {/* <div className="logo-container">
                             <img src={Splash} alt="Logo" class="styled-logo"/>
                         </div> */}
-            </div>
-
           </div>
         </div>
       </div>

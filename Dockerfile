@@ -32,7 +32,9 @@ RUN apk update && \
     && apk del .build-deps
 
 # Download missing ssl file
-# RUN curl -o /etc/letsencrypt/options-ssl-nginx.conf https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/options-ssl-nginx.conf
+# RUN wget -O /etc/letsencrypt/options-ssl-nginx.conf https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/options-ssl-nginx.conf
+# RUN mkdir -p /etc/letsencrypt \
+#     && wget -O /etc/letsencrypt/options-ssl-nginx.conf https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/options-ssl-nginx.conf
 
 
 # Copy build files to nginx
@@ -45,8 +47,10 @@ COPY .nginx/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80 443
 
 # Start nginx
-# CMD ["nginx", "-g", "daemon off;"]
-# CMD ["sh", "-c", "certbot --non-interactive --agree-tos --email aborger@orbital-robots.com --nginx -d orbital-robots.com && nginx -g 'daemon off;'"]
-CMD ["sh", "-c", "nginx && certbot --non-interactive --agree-tos --email aborger@orbital-robots.com --nginx -d orbital-robots.com && tail -f /dev/null"]
+CMD ["nginx", "-g", "daemon off;"]
+# CMD ["sh", "-c", "apk add certbot-nginx && certbot --non-interactive --agree-tos --email aborger@orbital-robots.com --nginx -d orbital-robots.com && nginx -g 'daemon off;'"]
+# CMD ["sh", "-c", "apk add certbot-nginx && nginx && certbot --non-interactive --agree-tos --email aborger@orbital-robots.com --nginx -d orbital-robots.com && tail -f /dev/null"]
+# CMD ["sh", "-c", "certbot certonly --standalone --non-interactive --agree-tos --email aborger@orbital-robots.com --domains orbital-robots.com && nginx -g 'daemon off;'"]
 
 
+# CMD ["sh", "-c", "certbot certonly --standalone --non-interactive --agree-tos --email aborger@orbital-robots.com --domains orbital-robots.com && nginx -g 'daemon off;'"]

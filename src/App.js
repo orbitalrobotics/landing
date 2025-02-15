@@ -8,10 +8,11 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/About';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter >
       <Header />
 
       <Routes>
@@ -22,7 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> 
       </Routes>
       <Footer />
-    </Router>
+    </HashRouter>
   )
 }
 

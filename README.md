@@ -42,7 +42,11 @@ docker-compose up web-prod
 - Adjust Tailwind config for styling
 - Update Docker configurations as needed
 
+
 ## Local Development (without Docker)
+
+Follow steps in [here](#install-node-18-whichever-the-dockerfiledev-points-to) to get nodejs installed to your system natively.
+
 ```bash
 npm install
 npm start
@@ -66,3 +70,35 @@ npm run build
 2) Use `Windows Defender Firewall with Advanced Security` and create an Inbound Rule to permit the ports clients can connect to.
 
 3) Go to your routers gateway IP and forward the dev or prod port(s) to make it accessible to the outside world.
+
+### Install Node-18 (whichever the Dockerfile.dev points to)
+
+Use `nvm` to manage nodejs and npm package version. The default nodejs version installed on Ubuntu is not version 18.
+
+1) Install `nvm`:
+
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash`
+
+`sudo apt-get update`
+
+`2082  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash`
+
+2) List the available node versions via `nvm`:
+
+`nvm ls`
+
+2) Install the specific `nodejs` version:
+  
+`nvm install lts/hydrogen`
+
+3) Verify `nodejs` and `npm` versions:
+
+`node --version`
+
+`npm --version`
+
+## Deploy to Github pages
+
+Follow steps in [here](#install-node-18-whichever-the-dockerfiledev-points-to) to get nodejs installed to your system.
+
+Run 

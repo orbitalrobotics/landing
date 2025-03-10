@@ -101,4 +101,7 @@ Use `nvm` to manage nodejs and npm package version. The default nodejs version i
 
 Follow steps in [here](#install-node-18-whichever-the-dockerfiledev-points-to) to get nodejs installed to your system.
 
-Run 
+Run `npm run deploy`
+
+    This will create a branch in the repo called `gh-pages`. Go to the Github Pages settings and be sure to point to this branch.
+

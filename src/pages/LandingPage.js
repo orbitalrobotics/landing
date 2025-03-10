@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Splash from "../assets/images/logo_white.png"
 import videoBg from "../assets/video/single_arm_cube_catch.mp4"
 import cube_grasp from "../assets/video/free-float-cube-grasp.mp4"
+import { Link } from 'react-router-dom';
 import "./LandingPage.css"
 
 function LandingPage() {
@@ -49,9 +50,9 @@ function LandingPage() {
               </p> */}
 
               <div className='button-wrapper'>
-                <a href="/Solutions">
+                <Link to="/solutions">
                   <button className="read-more-button">Explore Solutions</button>
-                </a>
+                </Link>
               </div>
 
 

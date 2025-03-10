@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/orbital-robotics-landing/static/css/main.b6a98f3f.css",
-    "main.js": "/orbital-robotics-landing/static/js/main.77692df3.js",
-    "static/media/pose_estimation_fast.mp4": "/orbital-robotics-landing/static/media/pose_estimation_fast.74c7d186b40b4eda0d8b.mp4",
-    "static/media/free-float-cube-grasp.mp4": "/orbital-robotics-landing/static/media/free-float-cube-grasp.de7edf13ee586a3d401b.mp4",
-    "static/media/single_arm_cube_catch.mp4": "/orbital-robotics-landing/static/media/single_arm_cube_catch.b2745facaa692d43fdbf.mp4",
-    "static/media/single_arm_planning.mp4": "/orbital-robotics-landing/static/media/single_arm_planning.76759cccbd7f8a81b839.mp4",
-    "static/media/dual_arm_ik_obj_grasp.mp4": "/orbital-robotics-landing/static/media/dual_arm_ik_obj_grasp.0160a0fafce058637efd.mp4",
-    "static/media/ar3_catch.mp4": "/orbital-robotics-landing/static/media/ar3_catch.31d49ba1a6e46ac96d52.mp4",
-    "static/media/ai_catch_montage.mp4": "/orbital-robotics-landing/static/media/ai_catch_montage.5f89f5a656254fe661b0.mp4",
-    "static/media/ai_view_ar3_catch.mp4": "/orbital-robotics-landing/static/media/ai_view_ar3_catch.e7aa48ff9725b053fe3d.mp4",
-    "static/media/riley.jpg": "/orbital-robotics-landing/static/media/riley.3efcd46521a088b570f5.jpg",
-    "static/media/aaron.png": "/orbital-robotics-landing/static/media/aaron.03de90844b2ad004f698.png",
-    "static/media/adeel.jpg": "/orbital-robotics-landing/static/media/adeel.e7879601c8015f638d33.jpg",
-    "static/media/sohil.jpeg": "/orbital-robotics-landing/static/media/sohil.26da4753de5b277bc37f.jpeg",
-    "static/media/logo_white.png": "/orbital-robotics-landing/static/media/logo_white.60a8ecfca744f903bb53.png",
-    "index.html": "/orbital-robotics-landing/index.html",
-    "main.b6a98f3f.css.map": "/orbital-robotics-landing/static/css/main.b6a98f3f.css.map",
-    "main.77692df3.js.map": "/orbital-robotics-landing/static/js/main.77692df3.js.map"
+    "main.css": "/landing/static/css/main.b6a98f3f.css",
+    "main.js": "/landing/static/js/main.29d7e6f7.js",
+    "static/media/pose_estimation_fast.mp4": "/landing/static/media/pose_estimation_fast.74c7d186b40b4eda0d8b.mp4",
+    "static/media/free-float-cube-grasp.mp4": "/landing/static/media/free-float-cube-grasp.de7edf13ee586a3d401b.mp4",
+    "static/media/single_arm_cube_catch.mp4": "/landing/static/media/single_arm_cube_catch.b2745facaa692d43fdbf.mp4",
+    "static/media/single_arm_planning.mp4": "/landing/static/media/single_arm_planning.76759cccbd7f8a81b839.mp4",
+    "static/media/dual_arm_ik_obj_grasp.mp4": "/landing/static/media/dual_arm_ik_obj_grasp.0160a0fafce058637efd.mp4",
+    "static/media/ar3_catch.mp4": "/landing/static/media/ar3_catch.31d49ba1a6e46ac96d52.mp4",
+    "static/media/ai_catch_montage.mp4": "/landing/static/media/ai_catch_montage.5f89f5a656254fe661b0.mp4",
+    "static/media/ai_view_ar3_catch.mp4": "/landing/static/media/ai_view_ar3_catch.e7aa48ff9725b053fe3d.mp4",
+    "static/media/riley.jpg": "/landing/static/media/riley.3efcd46521a088b570f5.jpg",
+    "static/media/aaron.png": "/landing/static/media/aaron.03de90844b2ad004f698.png",
+    "static/media/adeel.jpg": "/landing/static/media/adeel.e7879601c8015f638d33.jpg",
+    "static/media/sohil.jpeg": "/landing/static/media/sohil.26da4753de5b277bc37f.jpeg",
+    "static/media/logo_white.png": "/landing/static/media/logo_white.60a8ecfca744f903bb53.png",
+    "index.html": "/landing/index.html",
+    "main.b6a98f3f.css.map": "/landing/static/css/main.b6a98f3f.css.map",
+    "main.29d7e6f7.js.map": "/landing/static/js/main.29d7e6f7.js.map"
   },
   "entrypoints": [
     "static/css/main.b6a98f3f.css",
-    "static/js/main.77692df3.js"
+    "static/js/main.29d7e6f7.js"
   ]
 }
